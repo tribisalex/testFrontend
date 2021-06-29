@@ -4,6 +4,6 @@ button.onmousemove = (e) => {
     let x = e.pageX - e.target.offsetLeft;
     let y = e.pageY - e.target.offsetTop;
 
-    button.style.setProperty("--x", x + "px");
-    button.style.setProperty("--y", y + "px");
+    button.style.setProperty('--polX', x + 'px');
+    button.style.setProperty('--polY', y + 'px');
 };

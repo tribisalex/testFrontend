@@ -58,9 +58,9 @@
             filter: opacity(50%);
         }
     </style>
-
+    <script type="text/javascript" src="assets/buttonSee.js"></script>
     <!-- Google Tag Manager should be here -->
-    <script src="assets/buttonSee.js"></script>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
@@ -74,6 +74,7 @@
             }
         }
     </script>
+
 </head>
 
 <body>
@@ -141,45 +142,47 @@
     <video width="100%" loop="" autoplay="" playsinline="" async="" muted="">
         <source src="/assets/1023420115-lowres.mov" type="video/mp4">
     </video>
-
     <div class="container">
-
         <div class="col-lg-12">
-
             <div class="banner-text">
                 <p>Try our prediction services</p>
                 <p>We have an accurate online customer retention prediction available for free</p>
-                <div class="button">
+                <div class="button more">
                     <span>See how it works</span>
-
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
-<form action="#" method="POST" class="form-control">
-    <p>Input percentage of returned users in a cohort on the first, second, third... days:</p>
-    <p><input type="text" name="percentage_points" id="percentage_points"></p>
-    <p>How much points to predict?</p>
-    <p><input type="text" name="points_to_predict" id="points_to_predict"></p>
-    <p><input type="submit" value="Show Retention"></p>
-    <input type="hidden" name="return_html" value="yes" />
-</form>
+<div class="modal hidden">
+    <div class="overlay"></div>
+    <div class="modal-wrapper">
+        <button type="button" class="modal__close" aria-label="закрыть модальное окно" />
+        <form class="form modal__form" action="#" method="POST">
+            <p>Input percentage of returned users in a cohort on the first, second, third... days:</p>
+            <p><input type="text" name="percentage_points" class="input modal__input" id="percentage_points"></p>
+            <p>How much points to predict?</p>
+            <p><input type="text" name="points_to_predict" class="input modal__input" id="points_to_predict"></p>
+            <div class="modal-buttons">
+                <button type="submit" class="button modal__button">
+                    Show Retention
+                </button>
+            </div>
+            <input type="hidden" name="return_html" value="yes" />
+        </form>
+    </div>
+</div>
+
+<form class="modal hidden" action="#" method="POST" class="form-control ">
 
 <div class="container">
 
     <div class="row">
-
         <div class="col-12 text-center"><img
                 src="assets/banner2.jpg" alt=""
                 class="banner2"></div>
-
         <div class="clearfix"></div>
-
         <div class="col-12 col-md-6 col-lg-6 pr-4 who-we-are"><h3 class="animated fadeIn">Who We Are?</h3>
             Founded in 2020, Tachyon Analytics helps enterprises worldwide derive maximum business impact from their
             data.
