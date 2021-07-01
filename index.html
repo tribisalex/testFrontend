@@ -34,14 +34,10 @@
           content="Tachyon Analytics offers data analytics consulting services. Our data analytics services have helped clients to transform data into profit.">
 
     <!-- Bootstrap core CSS -->
-
     <link href="assets/bootstrap.min.css" rel="stylesheet">
-
     <link href="assets/font-awesome.min.css"
           rel="stylesheet">
-
     <link href="assets/css" rel="stylesheet">
-
     <link href="assets/jquery.bxslider.css"
           rel="stylesheet">
 
@@ -58,7 +54,7 @@
             filter: opacity(50%);
         }
     </style>
-    <script type="text/javascript" src="assets/buttonSee.js"></script>
+
     <!-- Google Tag Manager should be here -->
 
     <script type="application/ld+json">
@@ -74,6 +70,9 @@
             }
         }
     </script>
+    <script src="assets/buttonSee.js"></script>
+    <script src="assets/modal.js" defer></script>
+
 
 </head>
 
@@ -155,26 +154,23 @@
     </div>
 </div>
 
-<div class="modal hidden">
-    <div class="overlay"></div>
+<div class="">
+    <div class="overlay1"></div>
     <div class="modal-wrapper">
-        <button type="button" class="modal__close" aria-label="закрыть модальное окно" />
+        <button type="button" class="modal__clear" aria-label="закрыть модальное окно" />
         <form class="form modal__form" action="#" method="POST">
-            <p>Input percentage of returned users in a cohort on the first, second, third... days:</p>
-            <p><input type="text" name="percentage_points" class="input modal__input" id="percentage_points"></p>
-            <p>How much points to predict?</p>
+            Input percentage of returned users in a cohort on the first, second, third... days:
+            <input type="text" name="percentage_points" class="input modal__input" placeholder="How much points to predict?" id="percentage_points"></p>
+            How much points to predict?
             <p><input type="text" name="points_to_predict" class="input modal__input" id="points_to_predict"></p>
             <div class="modal-buttons">
                 <button type="submit" class="button modal__button">
                     Show Retention
                 </button>
             </div>
-            <input type="hidden" name="return_html" value="yes" />
         </form>
     </div>
 </div>
-
-<form class="modal hidden" action="#" method="POST" class="form-control ">
 
 <div class="container">
 
@@ -494,10 +490,12 @@
 <script src="assets/waypoints.min.js.Без названия"></script>
 <script src="assets/jquery.counterup.min.js.Без названия"></script>
 
+<script src="assets/buttonSee.js"></script>
+<script src="assets/modal.js"></script>
+
 <script type="text/javascript">
 
     //testimonials
-
     jQuery('.bxslider').bxSlider({
         auto: true,
         maxSlides: 1,
@@ -508,7 +506,6 @@
     });
 
     //banner
-
     jQuery('.bxslider2').bxSlider({
         auto: true,
         maxSlides: 1,
@@ -524,7 +521,6 @@
     });
     $('.counters .block h5 span').addClass('animated fadeInDownBig');
     $('h3').addClass('animated fadeIn');
-
 </script>
 
 </body>

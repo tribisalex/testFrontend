@@ -1,4 +1,3 @@
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -18,19 +17,19 @@ body {
 }
 
 .top-bar a {
-	    color: #ccc;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 21px;
-    font-size: 12px;
-    margin-left: 3px;
-    border: #ccc solid 2px;
-	    margin-top: 20px;
-    position: relative;
-    z-index: 99;
+	color: #ccc;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 21px;
+	font-size: 12px;
+	margin-left: 3px;
+	border: #ccc solid 2px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 99;
 }
 .top-bar a:hover{
 	opacity: .7;
@@ -54,7 +53,6 @@ body {
 	background-color: #00a046;
 	border-radius: 50%;
 	transition: width 1s ease, height 1s ease;
-
 	position: absolute;
 	top: var(--polX);
 	left: var(--polY);
@@ -69,9 +67,91 @@ body {
 	width: 250px;
 }
 
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.modal-wrapper {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 9;
+	max-width: 592px;
+	width: 100%;
+	height: 545px;
+	max-height: 100%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 71px 57px;
+	border: 1px solid white;
+}
+
+.modal-buttons {
+	display: flex;
+	margin-top: 70%;
+}
+
+.modal__button {
+	 margin-right: 48px;
+}
+
+.modal__clear {
+	 position: absolute;
+	 width: 30px;
+	 height: 30px;
+	 top: 15px;
+	 right: 15px;
+	 border: none;
+	 background-color: transparent;
+	 background-image: url('../assets/close.svg');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: contain;
+ }
+
+.modal__clear:focus {
+	 outline: none;
+ }
+
+.overlay1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
 .form {
 	border: 25px;
 	visibility: visible;
+	max-width: 492px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.input {
+	display: block;
+	border: none;
+	background-color: transparent;
+	padding-left: 14px;
+	padding-bottom: 9px;
+	border-bottom: 2px solid;
+	color: white;
+	width: 100%;
+}
+
+.input:focus {
+	outline: none
 }
 
 .top-bar a.login, .top-bar a.register {
@@ -889,7 +969,7 @@ float: left;
     font-size: 37px;
     text-transform: uppercase;
     line-height: 46px;}
-.attned-box{   
+.attned-box{
 	background: url(/assets/attandence-bg.jpg) left 0 repeat-x;
     padding: 10px 15px;
     margin-bottom: 26px;
@@ -931,7 +1011,7 @@ float: left;
 .counters .block h5 span{
 	font-size: 33px;
 }
-.result-baner{ 
+.result-baner{
 background: rgba(255,255,255,1);
 background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1)));
@@ -1340,7 +1420,7 @@ box-shadow: 0 0 3px rgba(0, 0, 0, 0.14901960784313725);}
     float: left;
     width: 100%;
 }
-	
+
 	.caree-banner {
     padding: 10px 0;
     font-size: 20px;
@@ -1349,5 +1429,5 @@ box-shadow: 0 0 3px rgba(0, 0, 0, 0.14901960784313725);}
 }
 	.counters .block img{height: 38px;}
 	.right-content a{float: none;}
-	
+
 }

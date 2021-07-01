@@ -1,4 +1,4 @@
-const moreElems = document.querySelectorAll('.more');
+const moreElem = document.querySelector('.more');
 const modalElem = document.querySelector('.modal');
 
 const openModal = () => {
@@ -9,9 +9,11 @@ const closeModal = () => {
     modalElem.classList.add('hidden')
 };
 
-moreElems.forEach((moreElem, index) => {
-    moreElem.addEventListener('click',openModal)
-});
+moreElem.addEventListener('click',openModal);
+
+// moreElems.forEach((moreElem, index) => {
+//     moreElem.addEventListener('click',openModal)
+// });
 
 modalElem.addEventListener('click', (event) => {
     const target = event.target;
@@ -23,4 +25,4 @@ modalElem.addEventListener('click', (event) => {
     if (target.classList.contains('modal__title')) {
         target.style.color = 'red';
     }
-})
+});
